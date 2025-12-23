@@ -57,7 +57,10 @@
     "circle-dashed-letter-letter-v": "circle-dashed-letter-v",
     "seeding": "seedling",
     "seeding-off": "seedling-off",
-    "noon-catalog": "noon-catalog"
+    "noon-catalog": "noon-catalog",
+    "my-brands": "my-brands",
+    "my-catalog": "my-catalog",
+    "brand-catalog": "brand-catalog"
   },
   "filled": {
     "discount-check": "rosette-discount-check",
