@@ -12,7 +12,6 @@
   <a href="https://tabler.io/icons"><strong>Browse at tabler.io/icons &rarr;</strong></a>
 </p>
 
-
 ## Sponsors
 
 **If you want to support our project and help me grow it, you can [become a sponsor on GitHub](https://github.com/sponsors/codecalm) or just [donate on PayPal](https://paypal.me/codecalm) :)**
@@ -57,14 +56,13 @@
   </picture>
 </p>
 
-
 ## Installation
 
 ```
 npm install @tabler/icons --save
 ```
 
-or just [download from GitHub](https://github.com/tabler/tabler-icons/releases).
+or just [download from GitHub](https://github.com/fastfishio/tabler-icons/releases).
 
 ## Usage
 
@@ -131,18 +129,20 @@ React components available through [`@tabler/icons-react`](https://www.npmjs.com
 import { IconAward } from '@tabler/icons-react';
 
 const MyComponent = () => {
-  return <IconAward
-    size={36} // set custom `width` and `height`
-    color="red" // set `stroke` color
-    stroke={3}  // set `stroke-width`
-    strokeLinejoin="miter" // override other SVG props
-  />
-}
+  return (
+    <IconAward
+      size={36} // set custom `width` and `height`
+      color="red" // set `stroke` color
+      stroke={3} // set `stroke-width`
+      strokeLinejoin="miter" // override other SVG props
+    />
+  );
+};
 ```
 
 `@tabler/icons-react` exports its own type declarations for usage with React and Typescript.
 
-For more details, see the [documentation](https://github.com/tabler/tabler-icons/tree/master/packages/icons-react).
+For more details, see the [documentation](https://github.com/fastfishio/tabler-icons/tree/master/packages/icons-react).
 
 ### Vue
 
@@ -154,15 +154,15 @@ Vue components available through [`@tabler/icons-vue`](https://www.npmjs.com/pac
   <IconHome />
 
   <!-- set `stroke` color -->
-  <IconHome color="red"/>
-  <IconHome stroke="red"/>
+  <IconHome color="red" />
+  <IconHome stroke="red" />
 
   <!-- set custom `width` and `height` -->
-  <IconHome size="36"/>
+  <IconHome size="36" />
 
   <!-- set `stroke-width` -->
-  <IconHome strokeWidth="2"/>
-  <IconHome stroke-width="2"/>
+  <IconHome strokeWidth="2" />
+  <IconHome stroke-width="2" />
 </template>
 
 <script>
@@ -170,7 +170,7 @@ Vue components available through [`@tabler/icons-vue`](https://www.npmjs.com/pac
 import { IconHome } from '@tabler/icons-vue';
 
 export default {
-  components: { IconHome }
+  components: { IconHome },
 };
 </script>
 ```
@@ -184,12 +184,11 @@ import { IconHome } from '@tabler/icons-vue';
 </script>
 
 <template>
-  <IconHome color="red" size="36" strokeWidth="2"/>
+  <IconHome color="red" size="36" strokeWidth="2" />
 </template>
 ```
 
-For more details, see the [documentation](https://github.com/tabler/tabler-icons/tree/master/packages/icons-vue).
-
+For more details, see the [documentation](https://github.com/fastfishio/tabler-icons/tree/master/packages/icons-vue).
 
 ### Angular
 
@@ -206,18 +205,14 @@ import { IconCamera, IconHeart, IconBrandGithub } from 'angular-tabler-icons/ico
 const icons = {
   IconCamera,
   IconHeart,
-  IconBrandGithub
+  IconBrandGithub,
 };
 
 @NgModule({
-  imports: [
-    TablerIconsModule.pick(icons)
-  ],
-  exports: [
-    TablerIconsModule
-  ]
+  imports: [TablerIconsModule.pick(icons)],
+  exports: [TablerIconsModule],
 })
-export class IconsModule { }
+export class IconsModule {}
 ```
 
 After importing the _IconsModule_ in your feature or shared module, use the icons as follows:
@@ -234,7 +229,7 @@ For more usage documentation refer to [the official documentation](https://githu
 
 ### Svelte 4 and below
 
-Svelte components available through [`@tabler/icons-svelte`](https://github.com/tabler/tabler-icons/tree/master/packages/icons-svelte) package.
+Svelte components available through [`@tabler/icons-svelte`](https://github.com/fastfishio/tabler-icons/tree/master/packages/icons-svelte) package.
 
 ```js
 <script lang="ts">
@@ -249,6 +244,7 @@ Svelte components available through [`@tabler/icons-svelte`](https://github.com/
 ```
 
 ### Svelte 5
+
 Svelte 5 components available through [`@tabler/icons-svelte-runes`](https://www.npmjs.com/package/@tabler/icons-svelte-runes) package.
 
 ```js
@@ -276,7 +272,10 @@ All files included in `@tabler/icons` npm package are available over a CDN.
 #### Iconfont
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+/>
 ```
 
 To load a specific version replace `latest` with the desired version number.
@@ -286,15 +285,16 @@ To load a specific version replace `latest` with the desired version number.
 ```
 
 ###### HTML
+
 ```html
 <i class="ti ti-brand-tabler"></i>
 ```
 
 ###### CSS
+
 ```css
 content: 'ec8f';
 ```
-
 
 ### Compiling fonts
 
@@ -303,6 +303,7 @@ To compile fonts first install [fontforge](https://fontforge.org/en-US/).
 When compiling the font it will look for a json file `compile-options.json` in root folder (same folder as the `package.json`) In this file you can define extra options:
 
 The default settings if you have not defined the file will be:
+
 ```JSON
 {
   "includeIcons": [],
@@ -320,11 +321,13 @@ The fontforge executable needs to be in the path or you can set the path to the 
 ```
 
 To compile the fonts run:
+
 ```sh
 npm run build-iconfont
 ```
 
 By default the stroke width is 2. You can change the stroke width in the `compile-options.json`
+
 ```JSON
 {
   "strokeWidth": 1.5,
@@ -340,12 +343,15 @@ To reduce the font file size you can choose to compile a sub set of icons. When 
 ```
 
 Optional property `includeCategories` - an array or string of icon categories to include, category names are case-insensitive.
+
 ```JSON
 {
   "includeCategories": ["Devices", "System"]
 }
 ```
+
 or
+
 ```JSON
 {
   "includeCategories": "Devices System"
@@ -353,6 +359,7 @@ or
 ```
 
 Optional property `excludeIcons` - an array of icon names using to exclude some category icons:
+
 ```JSON
 {
   "includeCategories": ["system"],
@@ -361,6 +368,7 @@ Optional property `excludeIcons` - an array of icon names using to exclude some 
 ```
 
 Complex solution:
+
 ```JSON
 {
   "includeIcons": ["alert-octagon", "alert-triangle"],
@@ -385,8 +393,7 @@ All icons in this repository have been created with the value of the `stroke-wid
 
 ## License
 
-Tabler Icons is licensed under the [MIT License](https://github.com/tabler/tabler-icons/blob/master/LICENSE).
-
+Tabler Icons is licensed under the [MIT License](https://github.com/fastfishio/tabler-icons/blob/master/LICENSE).
 
 ## Sponsor Tabler
 

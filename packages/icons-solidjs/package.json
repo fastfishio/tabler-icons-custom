@@ -6,7 +6,7 @@
   "description": "A set of free MIT-licensed high-quality SVG icons for you to use in your web projects.",
   "homepage": "https://tabler-icons.io",
   "bugs": {
-    "url": "https://github.com/tabler/tabler-icons/issues"
+    "url": "https://github.com/fastfishio/tabler-icons/issues"
   },
   "funding": {
     "type": "github",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tabler/tabler-icons.git",
+    "url": "git+https://github.com/fastfishio/tabler-icons.git",
     "directory": "packages/icons-solidjs"
   },
   "sideEffects": false,
