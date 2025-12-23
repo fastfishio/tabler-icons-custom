@@ -13,8 +13,8 @@ Implementation of the Tabler Icons library for Svelte applications.
 </p>
 
 <p align="center">
-    <a href="https://github.com/tabler/tabler-icons/releases"><img src="https://img.shields.io/npm/v/@tabler/icons" alt="Latest Release"></a>
-    <a href="https://github.com/tabler/tabler-icons/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/@tabler/icons.svg" alt="License"></a>
+    <a href="https://github.com/fastfishio/tabler-icons/releases"><img src="https://img.shields.io/npm/v/@tabler/icons" alt="Latest Release"></a>
+    <a href="https://github.com/fastfishio/tabler-icons/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/@tabler/icons.svg" alt="License"></a>
 </p>
 
 ## Sponsors
@@ -43,7 +43,7 @@ or
 pnpm install @tabler/icons-svelte
 ```
 
-or just [download from Github](https://github.com/tabler/tabler-icons/releases).
+or just [download from Github](https://github.com/fastfishio/tabler-icons/releases).
 
 ## How to use
 
@@ -62,27 +62,27 @@ import { IconHeart } from '@tabler/icons-svelte';
 You can pass additional props to adjust the icon.
 
 ```html
-<IconHeart size={48} stroke={1} />
+<IconHeart size="{48}" stroke="{1}" />
 ```
 
 ### Props
 
-| name          | type     | default      |
-| ------------- | -------- | ------------ |
-| `size`        | _Number_ | 24           |
-| `color`       | _String_ | currentColor |
-| `stroke`      | _Number_ | 2            |
-| `class`       | _String_ |              |
+| name     | type     | default      |
+| -------- | -------- | ------------ |
+| `size`   | _Number_ | 24           |
+| `color`  | _String_ | currentColor |
+| `stroke` | _Number_ | 2            |
+| `class`  | _String_ |              |
 
 ## Contributing
 
-For more info on how to contribute please see the [contribution guidelines](https://github.com/tabler/tabler-icons/blob/main/CONTRIBUTING.md).
+For more info on how to contribute please see the [contribution guidelines](https://github.com/fastfishio/tabler-icons/blob/main/CONTRIBUTING.md).
 
-Caught a mistake or want to contribute to the documentation? [Edit this page on Github](https://github.com/tabler/tabler-icons/blob/main/packages/icons-svelte/README.md)
+Caught a mistake or want to contribute to the documentation? [Edit this page on Github](https://github.com/fastfishio/tabler-icons/blob/main/packages/icons-svelte/README.md)
 
 ## License
 
-Tabler Icons is licensed under the [MIT License](https://github.com/tabler/tabler-icons/blob/master/LICENSE).
+Tabler Icons is licensed under the [MIT License](https://github.com/fastfishio/tabler-icons/blob/master/LICENSE).
 
 ## Sponsor Tabler
 
